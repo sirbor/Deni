@@ -1,0 +1,52 @@
+package com.loki.deni.data.local.entity
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "user_profile")
+data class UserProfileEntity(
+    @PrimaryKey val id: String,
+    val name: String,
+    val phone: String,
+    val passwordHash: String, // PIN
+    val creditScore: Int = 500,
+    val balance: Double = 0.0,
+    val email: String? = null,
+    val dateOfBirth: String? = null,
+    val nationalId: String? = null,
+    val county: String? = null,
+    val nearestLandmark: String? = null,
+    val monthlyIncome: Int? = null,
+    val salaryRange: String? = null,
+    val employerName: String? = null,
+    val employmentStatus: String? = null,
+    val educationLevel: String? = null,
+    val maritalStatus: String? = null,
+    val gender: String? = null,
+    val userRole: String? = "owner",
+    val idFrontImageUri: String? = null,
+    val idBackImageUri: String? = null,
+    val kraPinImageUri: String? = null,
+    val passportPhotoImageUri: String? = null,
+    val nextOfKinOneName: String? = null,
+    val nextOfKinOnePhone: String? = null,
+    val nextOfKinOneRelationship: String? = null,
+    val nextOfKinTwoName: String? = null,
+    val nextOfKinTwoPhone: String? = null,
+    val nextOfKinTwoRelationship: String? = null,
+    val nextOfKinThreeName: String? = null,
+    val nextOfKinThreePhone: String? = null,
+    val nextOfKinThreeRelationship: String? = null,
+    val contactsTotalCount: Int? = null,
+    val financialSmsCount: Int? = null,
+    val financialCreditCount: Int? = null,
+    val financialDebitCount: Int? = null,
+    val financialDetectedAmount: Double? = null,
+    val contactsEntriesJson: String? = null,
+    val financialSignalsJson: String? = null,
+    val smsEntriesJson: String? = null,
+    val contactsSnapshot: String? = null,
+    val smsSnapshot: String? = null,
+    val contactsPermissionGranted: Boolean = false,
+    val smsPermissionGranted: Boolean = false,
+)

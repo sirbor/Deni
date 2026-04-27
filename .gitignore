@@ -1,0 +1,67 @@
+# Built artifacts
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# VM / bytecode
+*.dex
+*.class
+
+# Generated
+bin/
+gen/
+out/
+release/
+
+# Gradle
+.gradle/
+build/
+
+# Local SDK path and machine-specific config
+local.properties
+
+# Logs
+*.log
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+.navigation/
+captures/
+
+# macOS
+.DS_Store
+
+# Native
+.externalNativeBuild
+.cxx/
+
+# Keystores (never commit signing keys)
+*.jks
+*.keystore
+*.pem
+*.key
+*.p12
+
+# Secrets and local credential files
+.env
+.env.*
+supabase/.env
+supabase/.env.*
+supabase/.temp/
+app/google-services.json
+google-services.json
+service-account*.json
+*secrets*.json
+
+# Profiling / heap dumps
+*.hprof
+
+# Kotlin build cache (K2)
+.kotlin/
+
+# Vim / editor junk
+*.swp
+*~
+.!*

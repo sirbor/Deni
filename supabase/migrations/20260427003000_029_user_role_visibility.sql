@@ -1,0 +1,2 @@
+ALTER TABLE IF EXISTS public.users
+  ADD COLUMN IF NOT EXISTS user_role TEXT NOT NULL DEFAULT 'owner';
